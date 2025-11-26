@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGF shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cart-window" style="display:none;">
+    <h2>🛒 Votre Panier</h2>
+    <div id="cart-items"></div>
+
+    <h3>Total : <span id="cart-total">0</span> FCFA</h3>
+
+    <button id="close-cart" style="margin-top:10px; padding:10px; width:100%; cursor: pointer;">Fermer</button>
+   <a href="">
+    <button id="confirm-cart" style="margin-top:10px; padding:10px; width:100%; cursor: pointer;">
+        Confirmer
+    </button>
+</a>
+       
+</div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>HGF shop</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+               
+               <li class="dropdown">
+    <a href="#vêtements">Vêtements </a>
+   
+</li>
+                          <li class="dropdown">
+    <a href="#Accessoires">Chaussures</a>
+   
+</li>
+                      <li class="dropdown">
+    <a href="#Accessoires">Accessoires</a>
+               
+                
+            </ul>
+            <div class="nav-icons">
+                <span class="cart"></span>
+                <span class="menu-toggle"></span>
+            </div>
+        </nav>
+        <div id="cart"></div>
+        <div id="cart-icon">
+    🛒 <span id="cart-count">0</span>
+    
+</div>
+   
+</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>COLLECTION CORTEIZ</h2>
+            <p>Streetwear authentique et exclusif</p>
+            <button class="cta-button">Découvrir</button>
+        </div>
+    </section>
+
+    <!-- Produits -->
+    <section id="produits" class="products">
+        <h2>NOS PRODUITS</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                 <span class="size-badge">S</span>
+                <img src="./images.jpg" alt="T-shirt Corteiz" width="120">
+                <h3>T-shirt Signature </h3>
+                <p>6,300 FCFA</p>
+                <button onclick="addToCart('Chemise Bleu', 6300, './images.jpg')">
+    Ajouter au panier
+</button>
+            </div>
+            <div class="product-card">
+                 <span class="size-badge">M</span>
+                <img src="./2323.webp" alt="Sweat Corteiz" width="120">
+                <h3>Sweat à Capuche</h3>
+                <p>5,300 FCFA</p>
+                <button onclick="addToCart('sweat corteiz', 5300,'./2323.webp')">Ajouter au panier</button>
+            </div>
+            
+            <div class="product-card">
+                 <span class="size-badge"></span>
+                <img src="./4545.jpg" alt="Casquette Corteiz" width="120">
+                <h3>Casquette Logo</h3>
+                <p>3,300 FCFA</p>
+               <button onclick="addToCart('Chemise Bleu', 3300, './4545.jpg')">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                 <span class="size-badge">XL</span>
+                <img src="./5454.webp" alt="chapeau Corteiz" width="120">
+                <h3>chapeau alcatraz</h3>
+                <p>4,300 FCFA</p>
+                <button onclick="addToCart('Chemise Bleu', 4300, './5454.webp')">
+    Ajouter au panier
+</button>
+            </div>
+ 
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>HGF shop</h4>
+                <p>2025 CI</p>
+            </div>
+            <div class="footer-section">
+                <h4>LIENS RAPIDES</h4>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p>hgf00050@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HGF. Tous droits réservés.</p>
+        </div>
+
+<script src="cart.js"></script>
+ </footer>
+ 
+</section>
+<section id="commande" style="padding:20px; display:none;">
+    <h2>Confirmer la commande</h2>
+
+    <form action="https://formsubmit.co/hgf00050@gmail.com" method="POST">
+
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="Nouvelle commande sur HGF Shop">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- Données du panier -->
+        <label>Produits commandés</label>
+        <textarea id="cart-data" name="Produits" readonly></textarea>
+
+        <label>Total</label>
+        <input id="cart-total-input" type="text" name="Total" readonly>
+
+        <!-- Infos client -->
+        <label>Nom du client</label>
+        <input type="text" name="Nom" required>
+
+        <label>Téléphone</label>
+        <input type="text" name="Téléphone" required>
+
+        <label>Adresse</label>
+        <input type="text" name="Adresse" required>
+
+        <button type="submit">Envoyer la commande</button>
+    </form>
+</section>
+</body>
+</html>
+    
+
+
+
+
