@@ -18,7 +18,36 @@
     <button id="confirm-cart" style="margin-top:10px; padding:10px; width:100%; cursor: pointer;">
         Confirmer
     </button>
+<section id="commande" style="padding:20px; display:none;">
+    <h2>Confirmer la commande</h2>
 
+    <form action="https://formsubmit.co/hgf00050@gmail.com" method="POST">
+
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="Nouvelle commande sur HGF Shop">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <!-- Données du panier -->
+        <label>Produits commandés</label>
+        <textarea id="cart-data" name="Produits" readonly></textarea>
+
+        <label>Total</label>
+        <input id="cart-total-input" type="text" name="Total" readonly>
+
+        <!-- Infos client -->
+        <label>Nom du client</label>
+        <input type="text" name="Nom" required>
+
+        <label>numero whastapp</label>
+        <input type="text" name="Téléphone" required>
+
+        <label>Adresse</label>
+        <input type="text" name="Adresse" required>
+
+        <button type="submit">Envoyer la commande</button>
+    </form>
+</section>
        
 </div>
     <!-- Header -->
@@ -134,39 +163,11 @@
         </div>
 
 <script src="cart.js"></script>
+
  </footer>
  
 </section>
-<section id="commande" style="padding:20px; display:none;">
-    <h2>Confirmer la commande</h2>
 
-    <form action="jumia.ci/hgf00050@gmail.com" method="POST">
-
-        <!-- FormSubmit config -->
-        <input type="hidden" name="_subject" value="Nouvelle commande sur HGF Shop">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-
-        <!-- Données du panier -->
-        <label>Produits commandés</label>
-        <textarea id="cart-data" name="Produits" readonly></textarea>
-
-        <label>Total</label>
-        <input id="cart-total-input" type="text" name="Total" readonly>
-
-        <!-- Infos client -->
-        <label>Nom du client</label>
-        <input type="text" name="Nom" required>
-
-        <label>Téléphone</label>
-        <input type="text" name="Téléphone" required>
-
-        <label>Adresse</label>
-        <input type="text" name="Adresse" required>
-
-        <button type="submit">Envoyer la commande</button>
-    </form>
-</section>
 </body>
 </html>
     
