@@ -1,3 +1,5 @@
+
+
 /* Reset et styles de base */
 * Reset et styles de base */
 * {
@@ -63,11 +65,10 @@ body {
 
 /* Hero Section */
 .hero {
-    background:  
-                url(./cover2.jpg);
+    background: url("./cover2.jpg") no-repeat center center;
     background-size: cover;
     background-position: center;
-    height: 180vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -498,4 +499,19 @@ body {
     border-color: #ff6600;
     background: white;
     box-shadow: 0 0 4px #ff6600;
+}
+/* Responsive HERO pour mobile */
+@media (max-width: 480px) {
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
 }
