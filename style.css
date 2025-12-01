@@ -63,11 +63,11 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://via.placeholder.com/1920x1080');
+    background:  
+                url(./cover2.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 180vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +75,10 @@ body {
     color: white;
     margin-top: 60px;
 }
-
+.hero img{
+  object-fit: cover;
+  object-position: 30% 20%;
+}
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -85,6 +88,10 @@ body {
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+.img-wrap img{
+  object-fit: cover;
+  object-position: 30% 20%;
 }
 
 .cta-button {
@@ -127,6 +134,7 @@ body {
     text-align: center;
     border-radius: 5px;
     transition: transform 0.3s;
+  
 }
 
 .product-card:hover {
@@ -463,4 +471,31 @@ body {
         margin: 20px;
         padding: 20px;
     }
+}
+#cart-items {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.product-card select {
+    width: 40%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: ;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card select:hover {
+    border-color: #000;
+}
+
+.product-card select:focus {
+    outline: none;
+    border-color: #ff6600;
+    background: white;
+    box-shadow: 0 0 4px #ff6600;
 }

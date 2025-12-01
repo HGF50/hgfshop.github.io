@@ -19,7 +19,6 @@
         Confirmer
     </button>
 
-       
 </div>
     <!-- Header -->
     <header class="header">
@@ -31,11 +30,19 @@
                 <li><a href="#accueil">Accueil</a></li>
                
                <li class="dropdown">
-    <a href="#vêtements">Vêtements </a>
+    <a href="#vêtements">Vêtements &#x25BC </a>
+    <ul class="dropdown-menu">
+        
+<li><a href="#produits">TEE-SHIRT</a></li>
+<li><a href="#size-chapeau1">LONGSLEEVE</a></li>
+<li><a href="#PANTALON">PANTALON (pas dispo ❌​)</a></li>
+<li><a href="#JOGGINS">JOGGINS (pas dispo ❌​)</a></li>
+<li><a href="#SHORT">SHORT (pas dispo ❌​)</a></li>
+</ul>
    
 </li>
                           <li class="dropdown">
-    <a href="#Accessoires">Chaussures</a>
+    <a href="#CHAUSSURE">Chaussures (PAS DISPO )</a>
    
 </li>
                       <li class="dropdown">
@@ -60,54 +67,789 @@
     <!-- Hero Section -->
     <section id="accueil" class="hero">
         <div class="hero-content">
-            <h2>COLLECTION CORTEIZ</h2>
-            <p>Streetwear authentique et exclusif</p>
-            <button class="cta-button">Découvrir</button>
+            
+            <button class="cta-button">PECHO TES WEH TRANQUILLEMENT</button>
         </div>
     </section>
 
     <!-- Produits -->
     <section id="produits" class="products">
-        <h2>NOS PRODUITS</h2>
+        <h2>TEE-SHIRT</h2>
         <div class="product-grid">
             <div class="product-card">
-                 <span class="size-badge">S</span>
-                <img src="./images.jpg" alt="T-shirt Corteiz" width="120">
-                <h3>T-shirt Signature </h3>
-                <p>6,300 FCFA</p>
-                <button onclick="addToCart('Chemise Bleu', 6300, './images.jpg')">
-    Ajouter au panier
-</button>
+                <img src="./T1.jpg" alt="FNIO WORLD COOPER" width="120">
+                <h3>FNIO WORLD COOPER</h3>
+                <p>4.000 FCFA</p>
+               <label>Taille :</label>
+    <select id="size-tshirt1">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+
+    <button onclick="addToCart('FNIO WORLD COOPER', 4000, './T1.jpg', document.getElementById('size-tshirt1').value)">
+        Ajouter au panier
+    </button>
             </div>
             <div class="product-card">
-                 <span class="size-badge">M</span>
-                <img src="./2323.webp" alt="Sweat Corteiz" width="120">
-                <h3>Sweat à Capuche</h3>
-                <p>5,300 FCFA</p>
-                <button onclick="addToCart('sweat corteiz', 5300,'./2323.webp')">Ajouter au panier</button>
+                
+                <img src="./T2.jpg" alt="NIKE" width="120">
+                <h3>NIKE</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-sweat">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+    </select>
+                <button onclick="addToCart('NIKE', 4000,'./T2.jpg', document.getElementById('size-sweat').value)">Ajouter au panier</button>
             </div>
             
             <div class="product-card">
-                 <span class="size-badge"></span>
-                <img src="./4545.jpg" alt="Casquette Corteiz" width="120">
-                <h3>Casquette Logo</h3>
-                <p>3,300 FCFA</p>
-               <button onclick="addToCart('Chemise Bleu', 3300, './4545.jpg')">
+                
+                <img src="./T3.jpg" alt="Dolce & Gabbana" width="120">
+                <h3>Dolce & Gabbana</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                              <select id="size-casquette">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+               <button onclick="addToCart('Dolce & Gabbana', 4000, './T3.jpg', document.getElementById('size-casquette').value)">
     Ajouter au panier
 </button>
             </div>
              <div class="product-card">
-                 <span class="size-badge">XL</span>
-                <img src="./5454.webp" alt="chapeau Corteiz" width="120">
-                <h3>chapeau alcatraz</h3>
-                <p>4,300 FCFA</p>
-                <button onclick="addToCart('Chemise Bleu', 4300, './5454.webp')">
+                 
+                <img src="./T4.jpg" alt="MARCAEA" width="120">
+                <h3>MARCAEA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('MARCAEA', 4000, './T4.jpg', document.getElementById('size-chapeau').value)">
     Ajouter au panier
 </button>
             </div>
- 
-        </div>
+               <div class="product-card">
+                 
+                <img src="./T5.jpg" alt="ZARA" width="120">
+                <h3>ZARA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau00">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('ZARA', 4000, './T5.jpg', document.getElementById('size-chapeau00').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T44.jpg" alt="Kirin Strange" width="210">
+                <h3>Kirin Strange</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau01">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Kirin Strange', 4000, './T44.jpg', document.getElementById('size-chapeau01').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T7.jpg" alt="IT" width="120">
+                <h3>IT</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau02">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('IT', 4000, './T7.jpg', document.getElementById('size-chapeau02').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T8.jpg" alt="Anti Social Social Club" width="120">
+                <h3>Anti Social Social Club</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau04">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Anti Social Social Club', 4000, './T8.jpg', document.getElementById('size-chapeau04').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T9.jpg" alt="AGGOUP" width="120">
+                <h3>AGGOUP</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau05">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('AGGOUP', 4000, './T9.jpg', document.getElementById('size-chapeau05').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T10.jpg" alt="FNIBRAND" width="120">
+                <h3>FNIBRAND</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau06">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('FNIBRAND', 4000, './T10.jpg', document.getElementById('size-chapeau06').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T43.jpg" alt="CASABLANCA" width="120">
+                <h3>CASABLANCA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau07">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('CASABLANCA', 4000, './T43.jpg', document.getElementById('size-chapeau07').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T13.jpg" alt="M" width="120">
+                <h3>M</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau08">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('M', 4000, './T13.jpg', document.getElementById('size-chapeau08').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T14.jpg" alt="NIOVA" width="120">
+                <h3>NIOVA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau09">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('NIOVA', 4000, './T14.jpg', document.getElementById('size-chapeau09').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T15.jpg" alt="BAPE" width="120">
+                <h3>BAPE</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau010">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('BAPE', 4000, './T15.jpg', document.getElementById('size-chapeau010').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T16.jpg" alt="APE (BAPE)" width="120">
+                <h3>APE (BAPE)</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau011">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('APE (BAPE)', 4000, './T16.jpg', document.getElementById('size-chapeau011').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T18.jpg" alt="PRADA" width="120">
+                <h3>PRADA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau012">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('PRADA', 4000, './T18.jpg', document.getElementById('size-chapeau012').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T41.jpg" alt="LACOSTE" width="120">
+                <h3>LACOSTE</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau013">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('LACOSTE', 4000, './T41.jpg', document.getElementById('size-chapeau013').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T20.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau015">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 4000, './T20.jpg', document.getElementById('size-chapeau015').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T22.jpg" alt="RAGEL TLAIVE" width="120">
+                <h3>RAGEL TLAIVE</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau017">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('RAGEL TLAIVE', 4000, './T22.jpg', document.getElementById('size-chapeau017').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T24.jpg" alt="Bathing Ape (BAPE)" width="120">
+                <h3>Bathing Ape (BAPE)</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau018">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Bathing Ape (BAPE)', 4000, './T24.jpg', document.getElementById('size-chapeau018').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T25.jpg" alt="Bathing Ape (BAPE)" width="120">
+                <h3>Bathing Ape (BAPE)</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau019">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Bathing Ape (BAPE)', 4000, './T25.jpg', document.getElementById('size-chapeau019').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T26.jpg" alt="Bathing Ape (BAPE)" width="120">
+                <h3>Bathing Ape (BAPE)</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau020">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Bathing Ape (BAPE)', 4000, './T26.jpg', document.getElementById('size-chapeau020').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T27.jpg" alt="Undercover" width="120">
+                <h3>Undercover</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau022">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Undercover', 4000, './T27.jpg', document.getElementById('size-chapeau022').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T28.jpg" alt="FRST" width="120">
+                <h3>FRST</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau024">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('FRST', 4000, './T28.jpg', document.getElementById('size-chapeau024').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T29.jpg" alt="Nike x NOCTA" width="120">
+                <h3>Nike x NOCTA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau026">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Nike x NOCTA', 4000, './T29.jpg', document.getElementById('size-chapeau026').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T30.jpg" alt="Off-White" width="120">
+                <h3>Off-White</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau028">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Off-White', 4000, './T30.jpg', document.getElementById('size-chapeau028').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T31.jpg" alt="PUMA Essentials" width="120">
+                <h3>PUMA Essentials</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau029">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('PUMA Essentials', 4000, './T31.jpg', document.getElementById('size-chapeau029').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T32.jpg" alt="Adidas Originals" width="120">
+                <h3>Adidas Originals</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau030">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Adidas Originals', 4000, './T32.jpg', document.getElementById('size-chapeau030').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T33.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau031">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 4000, './T33.jpg', document.getElementById('size-chapeau031').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T45.jpg" alt="ERA" width="120">
+                <h3>ERA</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau033">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('ERA', 4000, './T45.jpg', document.getElementById('size-chapeau033').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T40.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau034">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 4000, './T40.jpg', document.getElementById('size-chapeau034').value)">
+    Ajouter au panier
+</button>
+            </div>   <div class="product-card">
+                 
+                <img src="./T42.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>4.000 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau035">
+        <option>XS</option>           
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 4000, './T42.jpg', document.getElementById('size-chapeau035').value)">
+    Ajouter au panier
+</button>
+            </div>
+          
+            <h1>LONGSLEEVE</h1> 
+                  <div class="product-card">            
+                <img src="./L1.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau1">
+        
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L1.jpg', document.getElementById('size-chapeau1').value)">
+    Ajouter au panier
+</button>
+            </div>
+            
+                  <div class="product-card">
+                 
+                <img src="./L2.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau2">
+       
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L2.jpg', document.getElementById('size-chapeau2').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L3.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau3">
+      
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L3.jpg', document.getElementById('size-chapeau3').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L4.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau4">
+        
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L4.jpg', document.getElementById('size-chapeau4').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L5.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau5">
+        
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L5.jpg', document.getElementById('size-chapeau5').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L6.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau6">
+       
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L6.jpg', document.getElementById('size-chapeau6').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L7.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau7">
+        
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L7.jpg', document.getElementById('size-chapeau7').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L8.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau8">
+       
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L8.jpg', document.getElementById('size-chapeau8').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L14.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau9">
+       
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L14.jpg', document.getElementById('size-chapeau9').value)">
+    Ajouter au panier
+</button>
+            </div>
+                 
+                  <div class="product-card">
+                 
+                <img src="./L10.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau10">
+      
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L10.jpg', document.getElementById('size-chapeau10').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L11.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau11">
+    
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L11.jpg', document.getElementById('size-chapeau11').value)">
+    Ajouter au panier
+</button>
+            </div>
+                  <div class="product-card">
+                 
+                <img src="./L12.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau12">
+       
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L12.jpg', document.getElementById('size-chapeau12').value)">
+    Ajouter au panier
+</button>
+            </div>
+            
+                  <div class="product-card">
+                 
+                <img src="./L13.jpg" alt="Chrome Hearts" width="120">
+                <h3>Chrome Hearts</h3>
+                <p>8.500 FCFA</p>
+                <Label>Taille :</Label>
+                   <select id="size-chapeau13">
+      
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+    </select>
+                <button onclick="addToCart('Chrome Hearts', 8500, './L13.jpg', document.getElementById('size-chapeau13').value)">
+    Ajouter au panier
+</button>
+            </div>
     </section>
+     
 <section id="commande" style="padding:20px; display:none;">
     <h2>Confirmer la commande</h2>
 
@@ -120,7 +862,8 @@
 
         <!-- Données du panier -->
         <label>Produits commandés</label>
-        <textarea id="cart-data" name="Produits" readonly></textarea>
+        <textarea id="cart-data" name="Produits" readonly ></textarea>
+      
 
         <label>Total</label>
         <input id="cart-total-input" type="text" name="Total" readonly>

@@ -1,21 +1,19 @@
 let cart = [];
 
 // Ajouter au panier
-function addToCart(name, price, image) {
+function addToCart(name, price, image, size) {
 
-    // Vérifier si le produit existe déjà (par image)
     const exists = cart.find(item => item.image === image);
 
     if (exists) {
         alert("Ce produit est déjà dans le panier !");
         return; 
     }
-
-    // Ajouter normalement
     cart.push({
         name: name,
         price: price,
-        image: image
+        image: image,
+        size: size
     });
 
     updateCartCount();
@@ -24,8 +22,7 @@ function addToCart(name, price, image) {
 
 // Mettre à jour le compteur
 function updateCartCount() {
-    const count = document.getElementById("cart-count");
-    count.textContent = cart.length;
+    document.getElementById("cart-count").textContent = cart.length;
 }
 
 // Afficher le panier
@@ -45,17 +42,22 @@ function renderCart() {
         productDiv.style.alignItems = "center";
         productDiv.style.marginBottom = "10px";
 
-        // 🔥 LA VERSION CORRECTE 🔥
         productDiv.innerHTML = `
-    <img src="${item.image}" 
-         style="width:50px; height:50px; object-fit:cover; margin-right:10px;">
+            <img src="${item.image}" 
+                 style="width:50px; height:50px; object-fit:cover; margin-right:10px;">
 
-    <span style="flex-grow:1;">
-        ${item.name} – ${item.price} FCFA
-    </span>
+            <div style="flex-grow:1;">
+                <strong>${item.name}</strong><br>
+                Taille / Pointure : <b>${item.size}</b><br>
+                Prix : ${item.price} FCFA
+            </div>
 
-    <button onclick="removeFromCart(${index})">X</button>
-;`
+            <button onclick="removeFromCart(${index})"
+                    style="padding:4px 8px; cursor:pointer;">
+                X
+            </button>
+        `;
+
         container.appendChild(productDiv);
     });
 
@@ -77,17 +79,17 @@ document.getElementById("cart-icon").addEventListener("click", function () {
 document.getElementById("close-cart").addEventListener("click", function () {
     document.getElementById("cart-window").style.display = "none"; 
 });
-document.getElementById("confirm-cart").addEventListener("click", function() {
-   document.getElementById("cart-window").style.display = "none";
-});
 
 document.getElementById("confirm-cart").addEventListener("click", function () {
-    // Affiche le formulaire
+    
+    document.getElementById("cart-window").style.display = "none";
     document.getElementById("commande").style.display = "block";
 
-    // Remplit les données du panier
+    // 🔥 VERSION CORRECTE 🔥
     document.getElementById("cart-data").value = cart
-        .map(item => `${item.name} - ${item.price} FCFA`)
+        .map(item => 
+           ` Produit : ${item.name}\nTaille/Pointure : ${item.size}\nPrix : ${item.price} FCFA\n`
+        )
         .join("\n");
 
     // Total
