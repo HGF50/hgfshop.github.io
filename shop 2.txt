@@ -48,7 +48,7 @@ function renderCart() {
 
             <div style="flex-grow:1;">
                 <strong>${item.name}</strong><br>
-                Pointure : <b>${item.size}</b><br>
+                Taille / Pointure : <b>${item.size}</b><br>
                 Prix : ${item.price} FCFA
             </div>
 
@@ -88,7 +88,7 @@ document.getElementById("confirm-cart").addEventListener("click", function () {
     // 🔥 VERSION CORRECTE 🔥
     document.getElementById("cart-data").value = cart
         .map(item => 
-           ` Produit : ${item.name}\nPointure : ${item.size}\nPrix : ${item.price} FCFA\n`
+           ` Produit : ${item.name}\nTaille/Pointure : ${item.size}\nPrix : ${item.price} FCFA\n`
         )
         .join("\n");
 

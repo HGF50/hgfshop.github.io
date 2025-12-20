@@ -29,26 +29,30 @@
                 <h1>HGF shop</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#accueil"><p style="color: white;">Accueil</p>
+</a></li>
                
-               <li class="dropdown">
-    <a href="#vêtements">Vêtements &#x25BC </a>
-    <ul class="dropdown-menu">
-        
-<li><a href="#produits">TEE-SHIRT</a></li>
-<li><a href="#size-chapeau1">LONGSLEEVE</a></li>
-<li><a href="#size-chapeauA1">PANTALON </a></li>
-<li><a href="#size-chapeauB1">JOGGINS</a></li>
-<li><a href="#size-chapeauC1">SHORT</a></li>
-</ul>
-   
-</li>
+     
+  
                           <li class="dropdown">
-    <a href="#CHAUSSURE">Chaussures (pas dispo)</a>
    
+    <a href="#SPRITE"><p style="color: yellow;">Nike</p>
+</a>
+      
+        <li><a href="#PENA"><p style="color: yellow;">Adidas</p></a></li>                      
+        <li><a href="#GG"><p style="color: yellow;">New Balance</p>
+</a></li>
+        <li><a href="#HO"><p style="color: yellow;">Asics</p>
+</a></li>
+        <li><a href="#F"><p style="color: yellow;">Vans</p>
+</a></li>
+        <li><a href="#A"><p style="color: yellow;">Dior</p>
+</a></li>
+
+
+
 </li>
-                      <li class="dropdown">
-    <a href="#Accessoires">Accessoires (pas dispo)</a>
+            
                
                 
             </ul>
@@ -101,1535 +105,971 @@
         <label>Adresse</label>
         <input type="text" name="Adresse" required>
 
-        <button type="submit">Envoyer la commande</button>
+        <button type="submit">Envoyez la commande</button>
     </form>
 </section>
     <!-- Produits -->
     <section id="produits" class="products">
-        <h2>TEE-SHIRT</h2>
+        
+        <h2 id="SPRITE">Vas-y</h2>
         <div class="product-grid">
             <div class="product-card">
-                <img src="./T1.jpg" alt="FNIO WORLD COOPER" width="120">
-                <h3>FNIO WORLD COOPER</h3>
-                <p>4.000 FCFA</p>
-               <label>Taille :</label>
-    <select id="size-tshirt1">
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+                <img src="./Air Force 1 07 Low.jpg" alt="Air Force 1 07 Low.jpg" width="120">
+                <h3>Air Force 1 '07 Low</h3>
+                     <p>10,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike1">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+    </select>
+ <button onclick="addToCart('   Air Force 1 07 Low',10000, './Air Force 1 07 Low.jpg', document.getElementById('Nike1').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one black.jpg" alt="Nike Air Force one black.jpg" width="120">
+                <h3>Nike Air Force one black</h3>
+                     <p>10,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike2">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one black',10000, './Nike Air Force one black.jpg', document.getElementById('Nike2').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one RW.jpg" alt="Nike Air Force one RW.jpg" width="120">
+                <h3>Nike Air Force one RW</h3>
+                     <p>12,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike3">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one RW',12000, './Nike Air Force one RW.jpg', document.getElementById('Nike3').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one RB.jpg" alt="Nike Air Force one RB.jpg" width="120">
+                <h3>Nike Air Force one RB</h3>
+                     <p>12,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike4">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one RB',12000, './Nike Air Force one RB.jpg', document.getElementById('Nike4').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one low.jpg" alt="Nike Air Force one low.jpg" width="120">
+                <h3>Nike Air Force one low</h3>
+                     <p>13,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike5">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one low',13000, './Nike Air Force one low.jpg', document.getElementById('Nike5').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one BW.jpg" alt="Nike Air Force one BW.jpg" width="120">
+                <h3>Nike Air Force one BW</h3>
+                     <p>13,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike6">
+        <option></option>
+        <option>36</option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one BW',13000, './Nike Air Force one BW.jpg', document.getElementById('Nike6').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one LB.jpg" alt="Nike Air Force one LB.jpg" width="120">
+                <h3>Nike Air Force one LB</h3>
+                     <p>13,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike7">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                       
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one LB',13000, './Nike Air Force one LB.jpg', document.getElementById('Nike7').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Air Force one LG.jpg" alt="Nike Air Force one LG.jpg" width="120">
+                <h3>Nike Air Force one LG</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike8">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+    </select>
+ <button onclick="addToCart('Nike Air Force one LG',16000, './Nike Air Force one LG.jpg', document.getElementById('Nike8').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Nike Dunk Loow.jpg" alt="Nike Dunk Loow.jpg" width="120">
+                <h3>Nike Dunk Loow</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike10">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart(' Nike Dunk Loow  ',16000, './Nike Dunk Loow.jpg', document.getElementById('Nike10').value)">
+    Ajouter au panier
+</button>
+            </div>
+            <div class="product-card">
+                <img src="./Air Jordan 1 Retro OZ.jpg" alt="Air Jordan 1 Retro OZ.jpg" width="120">
+                <h3>AAir Jordan 1 Retro OZ</h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike11">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart(' Air Jordan 1 Retro OZ',15000, './Air Jordan 1 Retro OZ.jpg', document.getElementById('Nike11').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Travis Scott Air Jordan 1.jpg" alt="Travis Scott Air Jordan 1.jpg" width="120">
+                <h3>Travis Scott Air Jordan 1 </h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike17">
+        <option></option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Travis Scott Air Jordan 1',15000, './Travis Scott Air Jordan 1.jpg', document.getElementById('Nike17').value)">
+    Ajouter au panier
+</button>
+            </div>
+            <div class="product-card">
+                <img src="./Air Jordan 4 Retro GSW.jpg" alt="Air Jordan 4 Retro GSW.jpg" width="120">
+                <h3>Air Jordan 4 Retro GSW</h3>
+                     <p>13,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike12">
+        <option></option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart(' Air Jordan 4 Retro GSW ',13000, './Air Jordan 4 Retro GSW.jpg', document.getElementById('Nike12').value)">
+    Ajouter au panier
+</button>
+            </div>
+          
+            <div class="product-card">
+                <img src="./Air Jordan 4 Retro BNGN.jpg" alt="Air Jordan 4 Retro BNGN.jpg" width="120">
+                <h3>Air Jordan 4 Retro BNGN</h3>
+                     <p>14,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike14">
+        <option></option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
     </select>
 
-    <button onclick="addToCart('FNIO WORLD COOPER', 4000, './T1.jpg', document.getElementById('size-tshirt1').value)">
-        Ajouter au panier
-    </button>
+ <button onclick="addToCart('Air Jordan 4 Retro BNGN ',14000, './Air Jordan 4 Retro BNGN.jpg', document.getElementById('Nike14').value)">
+    Ajouter au panier
+</button>
             </div>
-            <div class="product-card">
-                
-                <img src="./T2.jpg" alt="NIKE" width="120">
-                <h3>NIKE</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-sweat">
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+           <div class="product-card">
+                <img src="./Nike Air Jordan 13 Retro.jpg" alt="Nike Air Jordan 13 Retro.jpg" width="120">
+                <h3>NNike Air Jordan 13 Retro</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike13">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
     </select>
-                <button onclick="addToCart('NIKE', 4000,'./T2.jpg', document.getElementById('size-sweat').value)">Ajouter au panier</button>
-            </div>
-            
-            <div class="product-card">
-                
-                <img src="./T3.jpg" alt="Dolce & Gabbana" width="120">
-                <h3>Dolce & Gabbana</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                              <select id="size-casquette">
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-               <button onclick="addToCart('Dolce & Gabbana', 4000, './T3.jpg', document.getElementById('size-casquette').value)">
+ <button onclick="addToCart('Nike Air Jordan 13 Retro  ',16000, './Nike Air Jordan 13 Retro.jpg', document.getElementById('Nike13').value)">
     Ajouter au panier
 </button>
             </div>
              <div class="product-card">
-                 
-                <img src="./T4.jpg" alt="MARCAEA" width="120">
-                <h3>MARCAEA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+                <img src="./Air Jordan 13 Retro CAG.jpg" alt="Nike Dunk Loow.jpg" width="120">
+                <h3>Air Jordan 13 Retro CAG</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike15">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('MARCAEA', 4000, './T4.jpg', document.getElementById('size-chapeau').value)">
+ <button onclick="addToCart('Air Jordan 13 Retro CAG ',16000, './Air Jordan 13 Retro CAG.jpg', document.getElementById('Nike15').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Nike Air Max 95 Corteiz.jpg" alt="Nike Air Max 95 Corteiz.jpg" width="120">
+                <h3>Nike Air Max 95 Corteiz</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike16">
+        <option></option>                      
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Air Max 95 Corteiz  ',18000, './Nike Air Max 95 Corteiz.jpg', document.getElementById('Nike16').value)">
+    Ajouter au panier
+</button>
+            </div>
+           
+             <div class="product-card">
+                <img src="./Nike Nocta Black.jpg" alt="Nike Nocta Black.jpg" width="120">
+                <h3>Nike Nocta Black</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike18">
+        <option></option>                       
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Nocta Blac ',16000, './Nike Nocta Black.jpg', document.getElementById('Nike18').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Nike Nocta Hot Step 2.jpg" alt="Nike Nocta Hot Step 2.jpg" width="120">
+                <h3>Nike Nocta Hot Step 2</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike19">
+        <option></option>                     
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Nocta Hot Step 2  ',16000, './Nike Nocta Hot Step 2.jpg', document.getElementById('Nike19').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Nike Shox TL BMH.jpg" alt="Nike Shox TL BMH.jpg" width="120">
+                <h3>Nike Shox TL BMH</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike20">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Shox TL BMH  ',18000, './Nike Shox TL BMH.jpg', document.getElementById('Nike20').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Nike Shox TL BAM.jpg" alt="Nike Shox TL BAM.jpg" width="120">
+                <h3>Nike Shox TL BAM</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike21">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Shox TL BAM  ',18000, './Nike Shox TL BAM.jpg', document.getElementById('Nike21').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Nike Shox TL BMS.jpg" alt="Nike Shox TL BMS.jpg" width="120">
+                <h3>Nike Shox TL BMS</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike21">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Nike Shox TL BMS  ',18000, './Nike Shox TL BMS.jpg', document.getElementById('Nike21').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./TN triple black.jpg" alt="TN triple black.jpg" width="120">
+                <h3>TN triple black</h3>
+                     <p>14,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike22">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('TN triple black ',14000, './TN triple black.jpg', document.getElementById('Nike22').value)">
+    Ajouter au panier
+</button>
+
+            </div>
+   <div class="product-card">
+                <img src="./TN PLUS DRIFT.jpg" alt="TN PLUS DRIFT.jpg" width="120">
+                <h3>TN PLUS DRIFT</h3>
+                     <p>14,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike23">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('TN PLUS DRIFT ',14000, './TN PLUS DRIFT.jpg', document.getElementById('Nike23').value)">
+    Ajouter au panier
+</button>
+
+            </div>
+   <div class="product-card">
+                <img src="./TN PLUS DRIFT OFF.jpg" alt="TN PLUS DRIFT OFF.jpg" width="120">
+                <h3>TN PLUS DRIFT OFF</h3>
+                     <p>14,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike24">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('TN PLUS DRIFT OFF',14000, './TN PLUS DRIFT OFF.jpg', document.getElementById('Nike24').value)">
+    Ajouter au panier
+</button>
+           </div>
+          <h2 id="PENA"></h2>
+             <div class="product-card">
+                <img src="./Adidas Campus 00s BP.jpg" alt="Adidas Campus 00s BP.jpg" width="120">
+                <h3>Adidas Campus 00s BP</h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike30">
+        <option></option>
+        <option>36</option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Adidas Campus 00s BP  ',15000, './Adidas Campus 00s BP.jpg', document.getElementById('Nike30').value)">
     Ajouter au panier
 </button>
             </div>
                <div class="product-card">
-                 
-                <img src="./T5.jpg" alt="ZARA" width="120">
-                <h3>ZARA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau00">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+                <img src="./Adidas Campus 00s BS.jpg" alt="Adidas Campus 00s BS.jpg" width="120">
+                <h3>Adidas Campus 00s BS</h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike31">
+        <option></option>
+        <option>36</option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('ZARA', 4000, './T5.jpg', document.getElementById('size-chapeau00').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T44.jpg" alt="Kirin Strange" width="210">
-                <h3>Kirin Strange</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau01">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Kirin Strange', 4000, './T44.jpg', document.getElementById('size-chapeau01').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T7.jpg" alt="IT" width="120">
-                <h3>IT</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau02">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('IT', 4000, './T7.jpg', document.getElementById('size-chapeau02').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T8.jpg" alt="Anti Social Social Club" width="120">
-                <h3>Anti Social Social Club</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau04">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Anti Social Social Club', 4000, './T8.jpg', document.getElementById('size-chapeau04').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T9.jpg" alt="AGGOUP" width="120">
-                <h3>AGGOUP</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau05">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('AGGOUP', 4000, './T9.jpg', document.getElementById('size-chapeau05').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T10.jpg" alt="FNIBRAND" width="120">
-                <h3>FNIBRAND</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau06">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('FNIBRAND', 4000, './T10.jpg', document.getElementById('size-chapeau06').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T43.jpg" alt="CASABLANCA" width="120">
-                <h3>CASABLANCA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau07">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('CASABLANCA', 4000, './T43.jpg', document.getElementById('size-chapeau07').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T13.jpg" alt="M" width="120">
-                <h3>M</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau08">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('M', 4000, './T13.jpg', document.getElementById('size-chapeau08').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T14.jpg" alt="NIOVA" width="120">
-                <h3>NIOVA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau09">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('NIOVA', 4000, './T14.jpg', document.getElementById('size-chapeau09').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T15.jpg" alt="BAPE" width="120">
-                <h3>BAPE</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau010">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('BAPE', 4000, './T15.jpg', document.getElementById('size-chapeau010').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T16.jpg" alt="APE (BAPE)" width="120">
-                <h3>APE (BAPE)</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau011">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('APE (BAPE)', 4000, './T16.jpg', document.getElementById('size-chapeau011').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T18.jpg" alt="PRADA" width="120">
-                <h3>PRADA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau012">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('PRADA', 4000, './T18.jpg', document.getElementById('size-chapeau012').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T41.jpg" alt="LACOSTE" width="120">
-                <h3>LACOSTE</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau013">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('LACOSTE', 4000, './T41.jpg', document.getElementById('size-chapeau013').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T20.jpg" alt="Chrome Hearts Horseshoe" width="120">
-                <h3>Chrome Hearts Horseshoe</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau015">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Horseshoe', 4000, './T20.jpg', document.getElementById('size-chapeau015').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T22.jpg" alt="RAGEL TLAIVE" width="120">
-                <h3>RAGEL TLAIVE</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau017">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('RAGEL TLAIVE', 4000, './T22.jpg', document.getElementById('size-chapeau017').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T24.jpg" alt="Bathing Ape (BAPE) Camo" width="120">
-                <h3>Bathing Ape (BAPE) Camo</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau018">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Bathing Ape (BAPE) Camo', 4000, './T24.jpg', document.getElementById('size-chapeau018').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T25.jpg" alt="Bathing Ape (BAPE) ELVIS" width="120">
-                <h3>Bathing Ape (BAPE) ELVIS</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau019">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Bathing Ape (BAPE) ELVIS', 4000, './T25.jpg', document.getElementById('size-chapeau019').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T26.jpg" alt="Bathing Ape (BAPE) 1st Camo" width="120">
-                <h3>Bathing Ape (BAPE) 1st Camo</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau020">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Bathing Ape (BAPE) 1st Camo', 4000, './T26.jpg', document.getElementById('size-chapeau020').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T27.jpg" alt="Undercover" width="120">
-                <h3>Undercover</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau022">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Undercover', 4000, './T27.jpg', document.getElementById('size-chapeau022').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T28.jpg" alt="FRST" width="120">
-                <h3>FRST</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau024">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('FRST', 4000, './T28.jpg', document.getElementById('size-chapeau024').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T29.jpg" alt="Nike x NOCTA" width="120">
-                <h3>Nike x NOCTA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau026">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Nike x NOCTA', 4000, './T29.jpg', document.getElementById('size-chapeau026').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T30.jpg" alt="Off-White" width="120">
-                <h3>Off-White</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau028">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Off-White', 4000, './T30.jpg', document.getElementById('size-chapeau028').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T31.jpg" alt="PUMA Essentials" width="120">
-                <h3>PUMA Essentials</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau029">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('PUMA Essentials', 4000, './T31.jpg', document.getElementById('size-chapeau029').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T32.jpg" alt="Adidas Originals" width="120">
-                <h3>Adidas Originals</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau030">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Adidas Originals', 4000, './T32.jpg', document.getElementById('size-chapeau030').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T33.jpg" alt="Chrome Hearts Multi Color" width="120">
-                <h3>Chrome Hearts Multi Color</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau031">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Multi Color', 4000, './T33.jpg', document.getElementById('size-chapeau031').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T45.jpg" alt="ERA" width="120">
-                <h3>ERA</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau033">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('ERA', 4000, './T45.jpg', document.getElementById('size-chapeau033').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T40.jpg" alt="Chrome Hearts Hartz Tee" width="120">
-                <h3>Chrome Hearts Hartz Tee</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau034">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Hartz Tee', 4000, './T40.jpg', document.getElementById('size-chapeau034').value)">
-    Ajouter au panier
-</button>
-            </div>   <div class="product-card">
-                 
-                <img src="./T42.jpg" alt="Chrome Hearts Cross" width="120">
-                <h3>Chrome Hearts Cross</h3>
-                <p>4.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau035">
-        <option>XS</option>           
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Cross', 4000, './T42.jpg', document.getElementById('size-chapeau035').value)">
+ <button onclick="addToCart('Adidas Campus 00s BS  ',15000, './Adidas Campus 00s BS.jpg', document.getElementById('Nike31').value)">
     Ajouter au panier
 </button>
             </div>
-            <h1>LONGSLEEVE</h1> 
-                  <div class="product-card">            
-                <img src="./L1.jpg" alt="Chrome Hearts X Rolling Stones" width="120">
-                <h3>Chrome Hearts X Rolling Stones</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau1">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+               <div class="product-card">
+                <img src="./Adidas Samba OG.jpg" alt="Adidas Samba OG.jpg" width="120">
+                <h3>Adidas Samba OG</h3>
+                     <p>12,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike32">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Chrome Hearts X Rolling Stones', 8500, './L1.jpg', document.getElementById('size-chapeau1').value)">
+ <button onclick="addToCart('Adidas Samba OG ',12000, './Adidas Samba OG.jpg', document.getElementById('Nike32').value)">
     Ajouter au panier
 </button>
             </div>
-            
-                  <div class="product-card">
-                 
-                <img src="./L2.jpg" alt="Chrome Hearts Bordeaux" width="120">
-                <h3>Chrome Hearts Bordeaux</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau2">
-       
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+               <div class="product-card">
+                <img src="./D Adiddas Campus 00s .jpg" alt="D Adiddas Campus 00s .jpg" width="120">
+                <h3>D Adiddas Campus 00s </h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike33">
+        <option></option>
+        <option>36</option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Chrome Hearts Bordeaux', 8500, './L2.jpg', document.getElementById('size-chapeau2').value)">
+ <button onclick="addToCart('D Adiddas Campus 00s   ',16000, './D Adiddas Campus 00s .jpg', document.getElementById('Nike33').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">
-                 
-                <img src="./L3.jpg" alt="Chrome Hearts Raglan" width="120">
-                <h3>Chrome Hearts Raglan</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau3">
-      
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Raglan', 8500, './L3.jpg', document.getElementById('size-chapeau3').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L4.jpg" alt="Chrome Hearts Pink" width="120">
-                <h3>Chrome Hearts Pink</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau4">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Pink', 8500, './L4.jpg', document.getElementById('size-chapeau4').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L5.jpg" alt="Chrome Hearts Baseball" width="120">
-                <h3>Chrome Hearts Baseball</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau5">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Baseball', 8500, './L5.jpg', document.getElementById('size-chapeau5').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L6.jpg" alt=" Stüssy" width="120">
-                <h3>Stüssy</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau6">
-       
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart(' Stüssy', 8500, './L6.jpg', document.getElementById('size-chapeau6').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L7.jpg" alt="Chrome Hearts Hollywood Plus" width="120">
-                <h3>Chrome Hearts Hollywood Plus</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau7">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Hollywood Plus', 8500, './L7.jpg', document.getElementById('size-chapeau7').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L8.jpg" alt="Chrome Hearts Hockey" width="120">
-                <h3>Chrome Hearts Hockey</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau8">
-       
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Hockey', 8500, './L8.jpg', document.getElementById('size-chapeau8').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L14.jpg" alt="Chrome Hearts Baseball Horseshoe" width="120">
-                <h3>Chrome Hearts  Baseball Horseshoe</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau9">
-       
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts  Baseball Horseshoe', 8500, './L14.jpg', document.getElementById('size-chapeau9').value)">
-    Ajouter au panier
-</button>
-            </div>
-                 
-                  <div class="product-card">
-                 
-                <img src="./L10.jpg" alt="Chrome Hearts Golden" width="120">
-                <h3>Chrome Hearts Golden</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau10">
-      
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Golden', 8500, './L10.jpg', document.getElementById('size-chapeau10').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L11.jpg" alt="Chrome Hearts Pink Clear" width="120">
-                <h3>Chrome Hearts Pink Clear</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau11">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Chrome Hearts Pink Clear', 8500, './L11.jpg', document.getElementById('size-chapeau11').value)">
-    Ajouter au panier
-</button>
-            </div>
-                  <div class="product-card">
-                 
-                <img src="./L12.jpg" alt="Stüssy Dice Pigment " width="120">
-                <h3>Stüssy Dice Pigment</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau12">
-       
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Stüssy Dice Pigment', 8500, './L12.jpg', document.getElementById('size-chapeau12').value)">
-    Ajouter au panier
-</button>
-            </div>
-            
-                  <div class="product-card">
-                 
-                <img src="./L13.jpg" alt="Stüssy Basic" width="120">
-                <h3>Stüssy Basic</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeau13">
-      
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-    </select>
-                <button onclick="addToCart('Stüssy Basic', 8500, './L13.jpg', document.getElementById('size-chapeau13').value)">
-    Ajouter au panier
-</button>
-            </div>
-            
-              <h1>PANTALON</h1> 
-            <br>
-                  <div class="product-card">            
-                <img src="./P1.jpg" alt="denim Maje" width="120">
-                <h3>denim Maje</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA1">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('denim Maje', 11500, './P1.jpg', document.getElementById('size-chapeauA1').value)">
-    Ajouter au panier
-</button>
-            </div>
-             <div class="product-card">            
-                <img src="./P2.jpg" alt="Kedera" width="120">
-                <h3>Kedera</h3>
-                <p>10.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA3">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Kedera', 10500, './P2.jpg', document.getElementById('size-chapeauA3').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P3.jpg" alt="Wooalong Femme" width="120">
-                <h3>Wooalong Femme</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA29">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Wooalong Femme', 11500, './P3.jpg', document.getElementById('size-chapeauA29').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P4.jpg" alt="Marc O'Polo" width="120">
-                <h3>Marc O'Polo</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA4">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Marc OPolo', 11500, './P4.jpg', document.getElementById('size-chapeauA4').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P5.jpg" alt="Weekday" width="120">
-                <h3>Weekday</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA5">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-         <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Weekday', 11500, './P5.jpg', document.getElementById('size-chapeauA5').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P6.jpg" alt="Wide Leg" width="120">
-                <h3>Haven Court</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA6">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-         <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Haven Court', 8500, './P6.jpg', document.getElementById('size-chapeauA6').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P7.jpg" alt="Wide Leg" width="120">
-                <h3>Wide Leg</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA7">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-           <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Wide Leg', 11500, './P7.jpg', document.getElementById('size-chapeauA7').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P8.jpg" alt="Bershka" width="120">
-                <h3>Bershka</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA8">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-           <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Bershka', 11500, './P8.jpg', document.getElementById('size-chapeauA8').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P11.jpg" alt="H&M" width="120">
-                <h3>H&M</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA9">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('H&M', 11500, './P11.jpg', document.getElementById('size-chapeauA9').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P15.jpg" alt="baggy wide-leg" width="120">
-                <h3>baggy wide-leg</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA10">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('baggy wide-leg', 11500, './P15.jpg', document.getElementById('size-chapeauA10').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P13.jpg" alt="bootcut" width="120">
-                <h3>bootcut</h3>
-                <p>12.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA11">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('bootcut', 12500, './P13.jpg', document.getElementById('size-chapeauA11').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P14.jpg" alt="flare" width="120">
-                <h3>flare</h3>
-                <p>12.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA12">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('flare', 12500, './P14.jpg', document.getElementById('size-chapeauA12').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P16.jpg" alt="denim Maje" width="120">
-                <h3>Denim de coton</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA13">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-         <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Denim de coton', 11500, './P16.jpg', document.getElementById('size-chapeauA13').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P17.jpg" alt="coupe flare" width="120">
-                <h3>coupe flare</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA14">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('coupe flare', 11500, './P17.jpg', document.getElementById('size-chapeauA14').value)">
-    Ajouter au panier
-</button>
-            </div>
-            <div class="product-card">            
-                <img src="./P18.jpg" alt="coupe flare" width="120">
-                <h3>coupe flare</h3>
-                <p>12.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA15">
-        
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('coupe flare', 12500, './P18.jpg', document.getElementById('size-chapeauA15').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./P20.jpg" alt="Lost Shadows" width="120">
-                <h3>Lost Shadows</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA16">
-        
-        
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
          
-    </select>
-                <button onclick="addToCart('Lost Shadows', 8500, './P20.jpg', document.getElementById('size-chapeauA16').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./P21.jpg" alt="wide straight fit" width="120">
-                <h3>wide straight fit</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA17">
-        
-        
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('wide straight fit', 11500, './P21.jpg', document.getElementById('size-chapeauA17').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./P22.jpg" alt="STM Design" width="120">
-                <h3>STM Design</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA18">
-        
-        
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('STM Design', 11500, './P22.jpg', document.getElementById('size-chapeauA18').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./P23.jpg" alt="coupe flare" width="120">
-                <h3>Style Y2K</h3>
-                <p>11.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA19">
-        
-        
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('Style Y2K', 11500, './P23.jpg', document.getElementById('size-chapeauA19').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./P24.jpg" alt="coupe flare" width="120">
-                <h3>rhinestone print</h3>
-                <p>12.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauA20">
-        
-        
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-          <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('rhinestone print', 12500, './P24.jpg', document.getElementById('size-chapeauA20').value)">
-    Ajouter au panier
-</button>
-            </div>
-           
-   <h1>JOGGINS</h1> 
-            <br>
-                  <div class="product-card">            
-                <img src="./J1.jpg" alt="polaire" width="120">
-                <h3>polaire</h3>
-                <p>4.300 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB1">
-         
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('polaire', 4300, './J1.jpg', document.getElementById('size-chapeauB1').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J2.jpg" alt="wide-leg" width="120">
-                <h3>wide-leg</h3>
-                <p>5.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB2">
-      
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
-    </select>
-                <button onclick="addToCart('wide-leg', 5000, './J2.jpg', document.getElementById('size-chapeauB2').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J3.jpg" alt="large plissé" width="120">
-                <h3>large plissé</h3>
-                <p>5.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB3">
-         
-      
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('large plissé', 5000, './J3.jpg', document.getElementById('size-chapeauB3').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J4.jpg" alt="Scuba" width="120">
-                <h3>Scuba</h3>
-                <p>4.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB4">
-         
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
-    </select>
-                <button onclick="addToCart('Scuba', 4500, './J4.jpg', document.getElementById('size-chapeauB4').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J5.jpg" alt="évasé bootcut" width="120">
-                <h3>évasé bootcut</h3>
-                <p>5.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB5">
-         
-                      
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
-    </select>
-                <button onclick="addToCart('évasé bootcut', 5000, './J5.jpg', document.getElementById('size-chapeauB5').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J6.jpg" alt="uni décontracté" width="120">
-                <h3>uni décontracté</h3>
-                <p>4.700 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB6">
-         
-        <option>XS</option>         
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
-    </select>
-                <button onclick="addToCart('uni décontracté', 4700, './J6.jpg', document.getElementById('size-chapeauB6').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J8.jpg" alt="émeraude" width="120">
-                <h3>émeraude</h3>
-                <p>4.700 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB7">
-         
-        <option>XS</option>  
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
-    </select>
-                <button onclick="addToCart('émeraude', 4700, './J8.jpg', document.getElementById('size-chapeauB7').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J9.jpg" alt="pull-on" width="120">
-                <h3>pull-on</h3>
-                <p>4.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB8">
-         
-        <option>XS</option>  
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-       
-    </select>
-                <button onclick="addToCart('pull-on', 4500, './J9.jpg', document.getElementById('size-chapeauB8').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J10.jpg" alt="wide leg pant" width="120">
-                <h3>wide leg pant</h3>
-                <p>4.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB9">
-         
-        <option>XS</option>       
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
-    </select>
-                <button onclick="addToCart('wide leg pant', 4500, './J10.jpg', document.getElementById('size-chapeauB9').value)">
-    Ajouter au panier
-</button>
-            </div>
-              <div class="product-card">            
-                <img src="./J11.jpg" alt="wide leg joggers" width="120">
-                <h3>wide leg joggers</h3>
-                <p>4.300 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB10">
-         
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
-    </select>
-                <button onclick="addToCart('wide leg joggers', 4250, './J11.jpg', document.getElementById('size-chapeauB10').value)">
-    Ajouter au panier
 </button>
            
-            </div>
-              <div class="product-card">            
-                <img src="./J12.jpg" alt="Y2K Streetwear" width="120">
-                <h3>Y2K Streetwear</h3>
-                <p>5.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauB12">
-         
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        
+               <div class="product-card">
+                <img src="./DR Adiddas Campus 00s  .jpg" alt="DR Adiddas Campus 00s  .jpg" width="120">
+                <h3>Adidas Campus 00s BP</h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike30">
+        <option>36</option>
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Y2K Streetwear', 5000, './J12.jpg', document.getElementById('size-chapeauB12').value)">
+ <button onclick="addToCart('DR Adiddas Campus 00s  ',15000, './DR Adiddas Campus 00s  .jpg', document.getElementById('Nike30').value)">
     Ajouter au panier
 </button>
             </div>
-              
- <h1>SHORT</h1> 
-            <br>
-                  <div class="product-card">            
-                <img src="./C1.jpg" alt="bermudas" width="120">
-                <h3>bermudas</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC1">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+<h2 id="GG"></h2>
+    <div class="product-card">
+                <img src="./New Balance 530.jpg" alt="New Balance 530.jpg" width="120">
+                <h3>New Balance 530</h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike40">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('bermudas', 8500, './C1.jpg', document.getElementById('size-chapeauC1').value)">
+ <button onclick="addToCart('New Balance 530',15000, './New Balance 530.jpg', document.getElementById('Nike40').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C2.jpg" alt="Denim délavé bleu" width="120">
-                <h3>Denim délavé bleu</h3>
-                <p>10.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC2">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+             <div class="product-card">
+                <img src="./New Balance 574 GB.jpg" alt="New Balance 574 GB.jpg" width="120">
+                <h3>New Balance 574 GB</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike46">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Denim délavé bleu', 10500, './C2.jpg', document.getElementById('size-chapeauC2').value)">
-    Ajouter au panier
-</button>
-            </div>      <div class="product-card">            
-                <img src="./C3.jpg" alt="Avie Clothing" width="120">
-                <h3>Avie Clothing</h3>
-                <p>10.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC3">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-    </select>
-                <button onclick="addToCart('Avie Clothing', 10500, './C3.jpg', document.getElementById('size-chapeauC3').value)">
+ <button onclick="addToCart('New Balance 574 GB',16000, './New Balance 574 GB.jpg', document.getElementById('Nike46').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C4.jpg" alt="Alt one" width="120">
-                <h3>Alt one</h3>
-                <p>10.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC4">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+             <div class="product-card">
+                <img src="./New balance 860 V2 .jpg" alt="New balance 860 V2 .jpg" width="120">
+                <h3>New balance 860 V2</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike41">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Alt one', 10500, './C4.jpg', document.getElementById('size-chapeauC4').value)">
+ <button onclick="addToCart('New balance 860 V2',16000, './New balance 860 V2 .jpg', document.getElementById('Nike41').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C5.jpg" alt="MAGORENSEOUL" width="120">
-                <h3>MAGORENSEOUL</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC5">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+             <div class="product-card">
+                <img src="./New Balance 1906R.jpg" alt="New Balance 1906R.jpg" width="120">
+                <h3>New Balance 1906R</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike42">
+        <option></option>
+        <option>40</option>
+        <option>41</option> 
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('MAGORENSEOUL', 8500, './C5.jpg', document.getElementById('size-chapeauC5').value)">
+ <button onclick="addToCart('New Balance 1906R',16000, './New Balance 1906R.jpg', document.getElementById('Nike42').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C6.jpg" alt="Subc Rude" width="120">
-                <h3>Subc Rude</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC6">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+             <div class="product-card">
+                <img src="./New Balance 1906R NN.jpg" alt="New Balance 1906R NN.jpg" width="120">
+                <h3>New Balance 1906R NN</h3>
+                     <p>17,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike43">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Subc Rude', 8500, './C6.jpg', document.getElementById('size-chapeauC6').value)">
+ <button onclick="addToCart('New Balance 1906R NN',17000, './New Balance 1906R NN.jpg', document.getElementById('Nike43').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C7.jpg" alt="Emmiol" width="120">
-                <h3>Emmiol</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC7">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+             <div class="product-card">
+                <img src="./New Balance 740 NA.jpg" alt="New Balance 740 NA.jpg" width="120">
+                <h3>New Balance 740 NA</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike44">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Emmiol', 8500, './C7.jpg', document.getElementById('size-chapeauC7').value)">
+ <button onclick="addToCart('New Balance 740 NA ',16000, './New Balance 740 NA.jpg', document.getElementById('Nike44').value)">
+    Ajouter au panier
+</button>
+            </div>        
+<h2 id="HO"></h2>
+<div class="product-card">
+                <img src="./Asics GEL-1130.jpg" alt="Asics GEL-1130.jpg" width="120">
+                <h3>Asics GEL-1130</h3>
+                     <p>17,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike50">
+        <option></option>                  
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Asics GEL-1130 ',17000, './Asics GEL-1130.jpg', document.getElementById('Nike50').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C8.jpg" alt="washed grey" width="120">
-                <h3>washed grey</h3>
-                <p>10.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC8">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+            <div class="product-card">
+                <img src="./Asics Gel-Kahana 8.jpg" alt="Asics Gel-Kahana 8.jpg" width="120">
+                <h3>Asics Gel-Kahana 8</h3>
+                     <p>15,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike51">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('washed grey', 10500, './C8.jpg', document.getElementById('size-chapeauC8').value)">
+ <button onclick="addToCart('Asics Gel-Kahana 8 ',15000, './Asics Gel-Kahana 8.jpg', document.getElementById('Nike51').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C10.jpg" alt="Ourlets bruts" width="120">
-                <h3>Ourlets bruts</h3>
-                <p>8.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC9">
-
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
-        <option>XXXL</option>
+            <div class="product-card">
+                <img src="./ASICS Gel-Kayano 14 M.jpg" alt="ASICS Gel-Kayano 14 M.jpg" width="120">
+                <h3>ASICS Gel-Kayano 14 M</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike52">
+        <option></option>                         
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Ourlets bruts', 8500, './C10.jpg', document.getElementById('size-chapeauC9').value)">
+ <button onclick="addToCart('ASICS Gel-Kayano 14 M ',18000, './ASICS Gel-Kayano 14 M.jpg', document.getElementById('Nike52').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C9.jpg" alt="Richeé NYC" width="120">
-                <h3>Richeé NYC</h3>
-                <p>9.000 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC10">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
+            <div class="product-card">
+                <img src="./Asics Gel-Kayano 14 WPS.jpg" alt="Asics Gel-Kayano 14 WPS.jpg" width="120">
+                <h3>Asics Gel-Kayano 14 WPS</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike53">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Richeé NYC', 9000, './C9.jpg', document.getElementById('size-chapeauC10').value)">
+ <button onclick="addToCart('Asics Gel-Kayano 14 WPS ',18000, './Asics Gel-Kayano 14 WPS.jpg', document.getElementById('Nike53').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C14.jpg" alt="Corteiz Alcatraz Gray" width="120">
-                <h3>Corteiz Alcatraz Gray</h3>
-                <p>7.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC12">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+            <div class="product-card">
+                <img src="./Asics Gel-Kayano T21.jpg" alt="Asics Gel-Kayano T21.jpg" width="120">
+                <h3>Asics Gel-Kayano T21</h3>
+                     <p>18,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike54">
+        <option></option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Corteiz Alcatraz Gray', 7500, './C14.jpg', document.getElementById('size-chapeauC12').value)">
+ <button onclick="addToCart('Asics Gel-Kayano T21 ',18000, './Asics Gel-Kayano T21.jpg', document.getElementById('Nike54').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C12.jpg" alt="Corteiz Alcatraz Blue" width="120">
-                <h3>Corteiz Alcatraz Blue</h3>
-                <p>7.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC13">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+<h2 id="F"></h2>
+ <div class="product-card">
+                <img src="./Vans Knu Skool Black.jpg" alt="Vans Knu Skool Black.jpg" width="120">
+                <h3>Vans Knu Skool Black</h3>
+                     <p>17,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike60">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Corteiz Alcatraz Blue', 7500, './C12.jpg', document.getElementById('size-chapeauC13').value)">
+ <button onclick="addToCart('Vans Knu Skool Black ',17000, './Vans Knu Skool Black.jpg', document.getElementById('Nike60').value)">
     Ajouter au panier
 </button>
             </div>
-                  <div class="product-card">            
-                <img src="./C13.jpg" alt="Corteiz Alcatraz Black" width="120">
-                <h3>Corteiz Alcatraz Black</h3>
-                <p>7.500 FCFA</p>
-                <Label>Taille :</Label>
-                   <select id="size-chapeauC14">
-    
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-        <option>XXL</option>
+             <div class="product-card">
+                <img src="./Vans Knu Skool Navy.jpg" alt="Vans Knu Skool Navy.jpg" width="120">
+                <h3>Vans Knu Skool Navy</h3>
+                     <p>17,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike61">
+        <option></option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
     </select>
-                <button onclick="addToCart('Corteiz Alcatraz Black', 7500, './C13.jpg', document.getElementById('size-chapeauC14').value)">
+ <button onclick="addToCart('Vans Knu Skool Navy ',17000, './Vans Knu Skool Navy.jpg', document.getElementById('Nike61').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Vans Knu Skool NB.jpg" alt="Vans Knu Skool NB.jpg" width="120">
+                <h3>Vans Knu Skool NB</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike62">
+        <option></option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Vans Knu Skool NB ',16000, './Vans Knu Skool NB.jpg', document.getElementById('Nike62').value)">
+    Ajouter au panier
+</button>
+            </div>
+             <div class="product-card">
+                <img src="./Vans Knu Skool RNB.jpg" alt="Vans Knu Skool RNB.jpg" width="120">
+                <h3>Vans Knu Skool RNB</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike63">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Vans Knu Skool RNB',16000, './Vans Knu Skool RNB.jpg', document.getElementById('Nike63').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Vans Knu Skool BW.jpg" alt="Vans Knu Skool BW.jpg" width="120">
+                <h3>Vans Knu Skool BW</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike64">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Vans Knu Skool BW',16000, './Vans Knu Skool BW.jpg', document.getElementById('Nike64').value)">
+    Ajouter au panier
+</button>
+            </div>
+              <div class="product-card">
+                <img src="./Vans Knu Skool WG.jpg" alt="Vans Knu Skool WG.jpg" width="120">
+                <h3>Vans Knu Skool RNB</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike65">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Vans Knu Skool WG',16000, './Vans Knu Skool WG.jpg', document.getElementById('Nike65').value)">
+    Ajouter au panier
+</button>
+            </div>
+            <h2 id="A"></h2>
+             <div class="product-card">
+                <img src="./Dior B30 noires.jpg" alt="Dior B30 noires.jpg" width="120">
+                <h3>Dior B30 noires</h3>
+                     <p>16,000 FCFA</p>
+                <label>Pointure :</label>
+    <select id="Nike70">
+        <option></option>
+        <option>37</option>
+        <option>38</option>                          
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+    </select>
+ <button onclick="addToCart('Dior B30 noires',16000, './Dior B30 noires.jpg', document.getElementById('Nike70').value)">
     Ajouter au panier
 </button>
             </div>
